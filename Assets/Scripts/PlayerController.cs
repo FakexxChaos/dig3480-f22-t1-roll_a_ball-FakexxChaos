@@ -58,13 +58,7 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Pick Up"))
-        {
-            other.gameObject.SetActive(false);
-            count = count + 1;
-            SetCountText();
+        
         }
         else if (other.gameObject.CompareTag("Enemy"))
         {
