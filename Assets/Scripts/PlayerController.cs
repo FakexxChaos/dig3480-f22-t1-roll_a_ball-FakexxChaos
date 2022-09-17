@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour
 
         SetCountText();
         winTextObject.SetActive(false);
+
+        SetCountText();
+        loseTextObject.SetActive(false);
     }
 
     void OnMove(InputValue movementValue)
