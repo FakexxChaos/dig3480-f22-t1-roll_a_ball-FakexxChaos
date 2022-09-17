@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (lives >= 0)
         {
-            loseTextObject.SetActive(true)
+            loseTextObject.SetActive(true);
         }
     }
 
