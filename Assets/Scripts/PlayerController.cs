@@ -40,7 +40,10 @@ public class PlayerController : MonoBehaviour
         {
             winTextObject.SetActive(true);
         }
-        else if ()
+        else if (lives >= 0)
+        {
+            loseTextObject.SetActive(true)
+        }
     }
 
     void FixedUpdate()
