@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI livesText;
     public GameObject LoseTextObject;
     public GameObject winTextObject;
-    
+
     private Rigidbody rb;
     private int count;
     private int lives;
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
         SetCountText();
         winTextObject.SetActive(false);
- 
+
         SetCountText();
         LoseTextObject.SetActive(false);
     }
