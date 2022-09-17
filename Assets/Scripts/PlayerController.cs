@@ -8,10 +8,12 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 0;
     public TextMeshProUGUI countText;
+    public TextMeshProUGUI countLives;
     public GameObject winTextObject;
     
     private Rigidbody rb;
     private int count;
+    private int lives;
     private float movementX;
     private float movementY;
 
@@ -72,7 +74,7 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             lives = lives - 1;
-            
+
             SetCountText();
         }
         if (count == 12)
