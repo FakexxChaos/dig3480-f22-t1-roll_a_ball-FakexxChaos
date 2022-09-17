@@ -48,10 +48,13 @@ public class PlayerController : MonoBehaviour
         if (count >= 20)
         {
             winTextObject.SetActive(true);
+            Destroy(gameObject);
         }
-        if (lives >= 0)
+        livesText.text = "Lives: " + lives.ToString();
+        if (lives == 0)
         {
-            livesTextObject.SetActive(true);
+            LoseTextObject.SetActive(true);
+            Destroy(gameObject);
         }
     }
 
